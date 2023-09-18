@@ -13,6 +13,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
   <!-- SweetAlert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -43,6 +50,7 @@
   <script src="./js/markerHandler.js"></script>
   <script src="./js/addMarkers.js"></script>
   <script src="./js/addButtons.js"></script>
+  <script src="./js/stars.js"></script>
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
@@ -78,10 +86,7 @@
                 </thead>
                 <tbody id="bill-table-body">
                   <!-- foreach ($order->lineItems as $line)  -->
-
-                  <!-- Your Order Summary UI will comes here                 
-                    
-                  -->
+                  <!-- Your Order Summary will comes here  -->
                 </tbody>
               </table>
             </div>
@@ -96,9 +101,17 @@
     </div>
   </div>
 
+
+
   <script>
     function closeModal() {
       document.getElementById("modal-div").style.display = "none";
+    }
+  </script>
+
+  <script>
+    function closeRatingModal() {
+      document.getElementById("rating-modal-div").style.display = "none";
     }
   </script>
 </body>
